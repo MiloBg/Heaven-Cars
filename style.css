@@ -1,0 +1,153 @@
+/*
+
+Font: Lato
+Colors:
+1 orange: #f79041
+2 dark grey: #222
+3 light grey: #ccc
+4 white: #fff
+
+*/
+
+/* --------------------------
+        Basic Setup
+-------------------------- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #222;
+    font-family: 'Lato', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+/* --------------------------
+            Header
+-------------------------- */
+
+.start-menu {
+    position: fixed;
+    height: 100vh;
+    width: 60px;
+    background-color: #222;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    box-shadow: 1px 5px 15px #222;
+    transition: all .5s ease;
+}
+
+.menu-closed {
+    position: absolute;
+    top: 30px;
+}
+
+.menu-closed i {
+    color: #ccc;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.menu-social {
+    transform: rotate(-90deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.menu-social a {
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+    color: #ccc;
+    font-size: 20px;
+    transition: all .3s ease;
+}
+
+.menu-social a:hover {
+    color: #f79041;
+}
+
+.menu-social a i {
+    margin-right: 5px;
+}
+
+/* Navigation Menu */
+
+.main-nav {
+    position: fixed;
+    height: 100vh;
+    background-color: #222;
+    width: 600px;
+    left: -600px;
+    display: none;
+    transition: all .5s ease;
+    z-index: 1000;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 5px 15px #222;
+    background-image: url(../img/carsLogo.png);
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.icon-close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    color: #ccc;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.main-nav h2 {
+    position: absolute;
+    top: 50px;
+    top: 10%;
+    color: #ccc;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-menu a {
+    color: #ccc;
+    margin: 20px;
+    font-size: 30px;
+    transition: all .3s ease;
+}
+
+.nav-menu a:hover {
+    color: #f79041;
+}
