@@ -314,3 +314,89 @@ a {
     background-color: #f79041;
     height: 100%;
 }
+
+/* --------------------------
+       Offers Section
+-------------------------- */
+
+.offers-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 60px;
+}
+
+.offers {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.offers-heading h2 {
+    font-size: 60px;
+    text-align: center;
+    margin-top: 40px;
+    letter-spacing: 2px;
+    line-height: 65px;
+}
+
+.offers-heading h2 span {
+    color: #f79041;
+    font-size: 80px;
+}
+
+.offers-section .pricing {
+    width: 20%;
+    background-color: #222;
+    height: 60%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 15px 35px black;
+    cursor: pointer;
+}
+
+.offers-section .pricing:hover {
+    box-shadow: 1px 25px 55px #f79041;
+}
+
+.offers-section .pricing:nth-child(2) {
+    background-color: #f79041;
+    margin-top: -50px;
+}
+
+.offers-section .pricing h3 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.offers-section .pricing p {
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding: 10px 20px;
+}
+
+.offers-section .pricing p:last-child {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 50px;
+    font-weight: 700;
+}
+
+.offers-section .pricing p span {
+    font-size: 30px;
+    vertical-align: text-top;
+    color: #f79041;
+}
+
+.offers-section .pricing:nth-child(2) p:last-child span {
+    color: #222;
+}
