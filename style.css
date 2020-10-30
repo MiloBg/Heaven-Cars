@@ -400,3 +400,49 @@ a {
 .offers-section .pricing:nth-child(2) p:last-child span {
     color: #222;
 }
+
+/* --------------------------
+       Gallery Section
+-------------------------- */
+
+.gallery-section {
+    height: 100vh;
+    background-color: #f79041;
+    padding-left: 60px;
+}
+
+.cars-gallery {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+}
+
+.cars-gallery div {
+    width: 30%;
+    margin: 0 20px;
+}
+
+.cars-gallery div img {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.portfolio-filter {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.portfolio-filter .button {
+    color: white;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.portfolio-filter .button.active {
+    color: #222;
+}
+
