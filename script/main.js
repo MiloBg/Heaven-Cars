@@ -55,3 +55,32 @@ $(function() {
     }
   });
 });
+
+/* Filterable Gallery */
+
+$(document).ready(function() {
+    $(".button").click(function(e) {
+        e.preventDefault();
+        var name = $(this).attr("data-filter");
+        if(name == "all") {
+            $(".filter").show("2000");
+        } else {
+            $(".filter").not("." + name).hide("2000");
+            $(".filter").filter("." + name).show("2000");
+        }
+    });
+    $(".button").click(function() {
+        $(this).addClass("active").siblings().removeClass("active");
+    });
+});
+
+/* Gallery Image Popup */
+
+$(function() {
+    $(".gallery-image").magnificPopup({
+        type: "image",
+        gallery: {
+            enabled: true,
+        }
+    })
+});
